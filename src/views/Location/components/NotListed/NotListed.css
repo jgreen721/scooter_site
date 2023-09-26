@@ -1,0 +1,36 @@
+.not-listed-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem var(--mainPaddingX);
+}
+
+.not-listed-column {
+  flex: 1.5;
+  /* border: 2px solid red; */
+}
+
+.not-listed-column:nth-child(2) {
+  flex: 1.5;
+}
+
+.not-listed-column:nth-child(3) {
+  flex: 0.5;
+}
+
+.not-listed-header {
+  line-height: 5.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .not-listed-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+  }
+
+  .not-listed-header {
+    max-width: 500px;
+    line-height: 4rem;
+  }
+}

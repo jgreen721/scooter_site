@@ -1,0 +1,29 @@
+.jobs-container {
+  padding: 4rem var(--mainPaddingX);
+}
+
+.jobs-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--lightgray);
+  margin: 2rem;
+  padding: 3rem 4rem;
+  border-radius: 0.8rem;
+}
+
+.jobs-item h2 {
+  line-height: 4rem;
+}
+
+@media screen and (max-width: 650px) {
+  .jobs-item {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .jobs-item button {
+    width: 100%;
+  }
+}

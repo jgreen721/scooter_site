@@ -1,0 +1,13 @@
+.mobile-section {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .desktop-section {
+    display: none;
+  }
+
+  .mobile-section {
+    display: block;
+  }
+}

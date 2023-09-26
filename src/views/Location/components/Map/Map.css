@@ -1,0 +1,146 @@
+.map-container {
+  padding: 5rem var(--mainPaddingX);
+}
+
+/* .map-img {
+  height: 100%;
+  width: 100%;
+} */
+
+.map-content {
+  position: relative;
+  width: calc(144rem - (var(--mainPaddingX) * 2));
+}
+
+.marker {
+  position: absolute;
+  z-index: 50;
+  inset: 0;
+  background: var(--yellow);
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  transform: scale(0);
+  animation: scale-grow 1s var(--i) forwards;
+}
+
+.marker::before {
+  width: 3rem;
+  height: 3rem;
+  background: var(--yellow);
+  content: "";
+  position: absolute;
+  left: calc(50% - 1.5rem);
+  bottom: -1.25rem;
+  transform: rotate(45deg);
+}
+
+.marker-one {
+  left: 20.5rem;
+  top: 8.5rem;
+}
+
+.marker-two {
+  left: 43.5rem;
+  top: 5.5rem;
+}
+
+.marker-three {
+  left: auto;
+  right: 9.5rem;
+  top: 10rem;
+}
+
+.marker-four {
+  left: auto;
+  right: 16rem;
+  top: auto;
+  bottom: 23rem;
+}
+
+.mobile-tags {
+  display: none;
+}
+
+.mobile-city-item {
+  position: relative;
+  text-align: center;
+  margin: 1rem;
+  padding: 2rem;
+  transform: scale(0);
+  animation: scale-grow 1s var(--i) forwards;
+}
+/* 
+.mobile-city-item * {
+  position: relative;
+  z-index: 50;
+} */
+
+.mobile-city-item::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  background: var(--yellow);
+  opacity: 25%;
+}
+
+@keyframes scale-grow {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .map-content {
+    position: relative;
+    width: calc(77.5rem - (var(--mainPaddingX) * 2));
+  }
+
+  .marker-one {
+    left: 10.5rem;
+    top: 2rem;
+  }
+
+  .marker-two {
+    left: 25rem;
+    top: 0rem;
+  }
+
+  .marker-three {
+    right: 4rem;
+    top: 4rem;
+  }
+
+  .marker-four {
+    left: auto;
+    right: 9rem;
+    top: auto;
+    bottom: 15rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .map-content {
+    position: relative;
+    width: calc(47.5rem - (var(--mainPaddingX) * 2));
+    width: auto;
+  }
+
+  .map-content img {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  .marker {
+    display: none;
+  }
+
+  .mobile-tags {
+    display: block;
+  }
+}
