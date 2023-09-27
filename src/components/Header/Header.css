@@ -1,13 +1,13 @@
 .about-header {
-  background-image: url("./assets/images/about-hero-desktop.jpg");
+  background-image: url("/assets/images/about-hero-desktop.jpg");
 }
 
 .career-header {
-  background-image: url("./assets/images/careers-locations-hero-desktop.jpg");
+  background-image: url("/assets/images/careers-locations-hero-desktop.jpg");
 }
 
 .location-header {
-  background-image: url("./assets/images/careers-locations-hero-desktop.jpg");
+  background-image: url("/assets/images/careers-locations-hero-desktop.jpg");
 }
 
 .header {
@@ -32,11 +32,11 @@
 
 @media screen and (max-width: 1050px) {
   .about-header {
-    background-image: url("./assets/images/about-hero-tablet.jpg");
+    background-image: url("/assets/images/about-hero-tablet.jpg");
   }
 
   .career-header {
-    background-image: url("./assets/images/careers-locations-hero-tablet.jpg");
+    background-image: url("/assets/images/careers-locations-hero-tablet.jpg");
   }
 }
 
@@ -53,10 +53,10 @@
   }
 
   .about-header {
-    background-image: url("./assets/images/about-hero-mobile.jpg");
+    background-image: url("/assets/images/about-hero-mobile.jpg");
   }
 
   .career-header {
-    background-image: url("./assets/images/careers-location-hero-mobile.jpg");
+    background-image: url("/assets/images/careers-location-hero-mobile.jpg");
   }
 }

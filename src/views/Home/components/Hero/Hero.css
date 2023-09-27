@@ -1,5 +1,5 @@
 .home-hero {
-  background-image: url("./assets/images/home-hero-desktop.jpg");
+  background-image: url("/assets/images/home-hero-desktop.jpg");
   background-size: cover;
   height: 65rem;
   padding: 15rem 0rem;
@@ -64,7 +64,7 @@
     align-items: flex-start;
     justify-content: center;
     text-align: center;
-    background-image: url("./assets/images/home-hero-tablet.jpg");
+    background-image: url("/assets/images/home-hero-tablet.jpg");
   }
 
   .hero-header {
@@ -97,7 +97,7 @@
 @media screen and (max-width: 550px) {
   .home-hero {
     padding: 12rem 0rem;
-    background-image: url("./assets/images/home-hero-mobile.jpg");
+    background-image: url("/assets/images/home-hero-mobile.jpg");
   }
 
   .mobile-hero-header {
