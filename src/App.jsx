@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <Navbar showMobile={showMobile} setShowMobile={setShowMobile}/>
       <div className="app-content">
-        <MobileMenu showMobile={showMobile}/>
+        <MobileMenu setShowMobile={setShowMobile} showMobile={showMobile}/>
         <AnimatePresence>
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home/>}/>
