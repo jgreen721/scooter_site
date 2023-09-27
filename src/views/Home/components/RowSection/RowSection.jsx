@@ -23,7 +23,7 @@ const RowSection = ({title,blurb,img,circleSide,arrowClassname,swap,isMobile}) =
       </div>
 
       <img className={`${arrowClassname} section-arrow-icon`} src={rightArrowIcon} alt="" />
-      {arrowClassname == "right-bottom" || arrowClassname == "right-bottom right-bottom-careers" && <img className={`right-bottom-line-icon line-${arrowClassname}`} src={lineIcon} alt="" />}
+      {arrowClassname == "right-bottom"  && <img className={`right-bottom-line-icon line-${arrowClassname}`} src={lineIcon} alt="" />}
       </div>
     
     :  !swap ? 
@@ -42,7 +42,8 @@ const RowSection = ({title,blurb,img,circleSide,arrowClassname,swap,isMobile}) =
         </div>
       </div>
       <img className={`${arrowClassname} section-arrow-icon`} src={rightArrowIcon} alt="" />
-      {arrowClassname == "right-bottom" || arrowClassname == "right-bottom right-bottom-careers" &&<img className={arrowClassname == 'right-bottom right-bottom-careers' ? 'right-bottom-line-icon right-bottom-line-careers' : "right-bottom-line-icon"} src={lineIcon} alt="" />}
+      {arrowClassname == "right-bottom" &&<img className={arrowClassname == 'right-bottom right-bottom-careers' ? 'right-bottom-line-icon right-bottom-line-careers' : "right-bottom-line-icon"} src={lineIcon} alt="" />}
+      {arrowClassname == "right-bottom right-bottom-careers" &&<img className={arrowClassname == 'right-bottom right-bottom-careers' ? 'right-bottom-line-icon right-bottom-line-careers' : "right-bottom-line-icon"} src={lineIcon} alt="" />}
     </div>
     :
     <div className={`${circleSide}-circle-section section`}>
@@ -61,7 +62,8 @@ const RowSection = ({title,blurb,img,circleSide,arrowClassname,swap,isMobile}) =
         </div>
     
         <img className={`${arrowClassname} section-arrow-icon`} src={rightArrowIcon} alt="" />
-        {arrowClassname == "right-bottom" || arrowClassname == "right-bottom right-bottom-careers" &&<img className={`right-bottom-line-icon line-${arrowClassname}`} src={lineIcon} alt="" />}
+        {arrowClassname == "right-bottom" && <img className={`right-bottom-line-icon line-${arrowClassname}`} src={lineIcon} alt="" />}
+        {arrowClassname == "right-bottom right-bottom-careers" && <img className={`right-bottom-line-icon line-${arrowClassname}`} src={lineIcon} alt="" />}
   
       </div>
     
